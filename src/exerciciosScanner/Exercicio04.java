@@ -1,3 +1,5 @@
+package exerciciosScanner;
+
 import java.util.Locale;
 import java.util.Scanner;
 
