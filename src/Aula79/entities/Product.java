@@ -40,6 +40,7 @@ public class Product {
         return quantity;
     }
 
+
     public double totalValueInStock() {
         return price * quantity;
     }
