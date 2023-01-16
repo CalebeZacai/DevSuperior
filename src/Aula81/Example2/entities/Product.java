@@ -1,4 +1,4 @@
-package Aula81.entities;
+package Aula81.Example2.entities;
 
 public class Product {
 
