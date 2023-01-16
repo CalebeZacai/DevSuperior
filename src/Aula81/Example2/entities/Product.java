@@ -4,10 +4,10 @@ public class Product {
 
         private int account;
         private String holder;
-        private int amount;
+        private double amount;
 
 
-        public Product(int account, String holder, int amount) {
+        public Product(int account, String holder, double amount) {
                 this.account = account;
                 this.holder = holder;
                 this.amount = amount;
@@ -29,15 +29,15 @@ public class Product {
                 this.holder = holder;
         }
 
-        public int getAmount() {
+        public double getAmount() {
                 return amount;
         }
 
-        public void addDeposit(int amount) {
+        public void addDeposit(double amount) {
                 this.amount += amount;
         }
 
-        public void removeDeposit(int amount) {
+        public void removeDeposit(double amount) {
                 this.amount -= amount;
         }
 }
