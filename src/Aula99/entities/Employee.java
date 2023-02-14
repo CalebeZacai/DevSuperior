@@ -4,17 +4,17 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Employee {
-    private int id;
+    private Integer id;
     private String name;
-    private double salary;
+    private Double salary;
 
-    public Employee(int id, String name, double salary) {
+    public Employee(Integer id, String name, Double salary) {
         this.id = id;
         this.name = name;
         this.salary = salary;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
@@ -22,15 +22,16 @@ public class Employee {
         return name;
     }
 
-    public double getSalary() {
+    public Double getSalary() {
         return salary;
     }
 
-    public void increaseSalary(double percent) {
-        salary += salary * percent / 100;
+    public void increaseSalary(double percentage) {
+        salary += salary * percentage / 100;
     }
 
+    @Override
     public String toString() {
-        return "Employee #" + (id + 1) + ", Id: " + id + ", Name: " + name + ", Salary: " + salary;
+        return id + ", " + name + ", " + String.format("%.2f", salary);
     }
 }
