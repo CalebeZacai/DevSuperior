@@ -38,6 +38,15 @@ public class Order {
         return status;
     }
 
+    @Override
+    public String toString() {
+        return "Order{" +
+                "id=" + id +
+                ", moment=" + moment +
+                ", status=" + status +
+                '}';
+    }
+
     public void setStatus(OrderStatus status) {
         this.status = status;
     }
